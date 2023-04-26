@@ -136,9 +136,9 @@ Not yet deployed but The project will be deployed very soon
 
 👤 **Sheldon**
 
-- GitHub: [@sheldon](https://github.com/sheldonwafula)
-- Twitter: [@sheldon](https://twitter.com/WafulaSheldon/status/1071355770309107714?t=2ITp6QeisOosV3VY84cKqA&s=19)
-- LinkedIn: [sheldon](https://www.linkedin.com/in/sheldon-wafula-55960021b/)
+- GitHub: [@sheldon Wafula](https://github.com/sheldonwafula)
+- Twitter: [@sheldon wafula](https://twitter.com/WafulaSheldon)
+- LinkedIn: [@sheldon wafula](https://www.linkedin.com/in/sheldon-wafula-55960021b/)
 
 <!-- FUTURE FEATURES -->
 
