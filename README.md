@@ -55,6 +55,7 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://index.html">HTML</a></li>
+    <li><a href="https://style.css">CSS</a></li>
   </ul>
 </details>
 
@@ -62,15 +63,6 @@
 
 
 
-<!-- Features -->
-
-### Key Features <a name="Heading"></a>
-
-
-- **[Heading]**
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -85,19 +77,23 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+  install nodejs.
+  install version control Git.
+  install code editor.
 
 
-  install git
+  
 
 
 ### Setup
 
 Clone this repository to your desired folder:
+git clone: https://github.com/sheldonwafula/The-portfolio.git
 
+  
+cd:The-portfolio.git
 
-  cd my-folder
-  git clone git@github.com:sheldonwafula/The portfolio.git
-
+open the project in a  code Editor
 
 ### Install
 
@@ -115,10 +111,7 @@ github/sheldonwafula/the portfolio
 
 ### Run tests
 
-To run tests, run the following command:
-
-
-github/sheldonwafula/The portfolio
+Not Applicable.
 
 
 ### Deployment
