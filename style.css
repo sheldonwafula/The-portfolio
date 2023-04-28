@@ -89,3 +89,253 @@
 .social li {
   margin: 10px;
 }
+
+/* work section */
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  background: #e5e5e5;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 24px 50px 24px;
+  background: #fff;
+  padding: 0;
+  justify-content: flex-start;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.profile {
+  margin: 16px 16px 0 16px;
+}
+
+.card-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 12px 16px 5px 16px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  color: #172b4d;
+}
+
+.canopy {
+  display: flex;
+  flex-direction: row;
+  margin: 12px 75px 0 10px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.card-section .cano {
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.canopy li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+  font-family: poppins, sans-serif;
+  color: #7a869a;
+}
+
+.card-section p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 5px 16px 0 16px;
+  color: #344563;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 12px 97px 0 6px;
+}
+
+.tech li {
+  list-style: none;
+  margin: 10px;
+  background: #ebebff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.card-section a {
+  width: 90px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #6070ff;
+  text-decoration: none;
+  padding: 12px;
+  margin: 16px;
+  font-family: poppins, sans-serif;
+}
+
+.ctn1 a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #7f8cff;
+  margin: 10px 0;
+}
+
+.card-section a:hover {
+  background-color: #c9cdf5;
+  box-shadow: #6070ff;
+}
+
+/* about */
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 114px 24px;
+  padding: 0;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-me h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.about-me p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #344563;
+}
+
+.ctn1 {
+  margin-bottom: 20px;
+}
+
+.ctn2 {
+  width: 130px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #6070ff;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: poppins, sans-serif;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0;
+  background: #fff;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.language-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frame-p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.language-section li {
+  list-style: none;
+  font-family: poppins, sans-serif;
+  margin: 20px 0;
+}
+
+.js-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.js-section li {
+  display: flex;
+  align-items: center;
+  width: 19rem;
+  height: 4.17rem;
+  list-style: none;
+  margin: 10px 0;
+  gap: 5px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  font-family: poppins, sans-serif;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.frame-works li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+}
