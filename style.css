@@ -409,6 +409,11 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
+    transition: 0.5s;
+  }
+
+  .form-section input:hover {
+    transform: translateX(10px);
   }
 
   .form-section textarea {
