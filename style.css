@@ -483,6 +483,15 @@ body {
     margin: 2%;
   }
 
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .landing-page {
     display: flex;
     flex-direction: column;
@@ -883,6 +892,7 @@ body {
     border-top-left-radius: 70px;
     background-image: url("images/contact\ form\ background.png");
     background-size: cover;
+    width: 100%;
   }
 
   .contact-section h1 {
