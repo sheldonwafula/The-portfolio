@@ -115,7 +115,10 @@ Not Applicable.
 
 
 ### Deployment
-Not yet deployed but The project will be deployed very soon
+
+## 🚀 Live Demo <a name="Now  live"></a>
+
+- [<a href="https://sheldonwafula.github.io/The-portfolio/" target="_blank">Demo</a>](#)
 
 
 
