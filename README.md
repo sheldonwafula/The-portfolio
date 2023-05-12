@@ -43,7 +43,7 @@
 
 **[The portfolio]** is the second project at microverse with tests on gitflow and linter errors.
 
-- [<a href="[https://www.loom.com/share/3f4171ede5b34ca08a62a638f40fc4bc](https://www.loom.com/share/7c60e9c5b5cf4fa99898851fd2fbe067)" target="_blank">Project video</a>](#)
+- [<a href="https://www.loom.com/share/7c60e9c5b5cf4fa99898851fd2fbe067" target="_blank">Project video</a>]
 
 ## 🛠 Built With <a name="sheldon wafula"></a>
 
