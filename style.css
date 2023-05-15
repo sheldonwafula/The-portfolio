@@ -48,7 +48,7 @@ body {
   
   .nav-menu {
     position: fixed;
-    left: -10%;
+    left: 0;
     top: 0;
     gap: 0;
     flex-direction: column;
@@ -58,9 +58,18 @@ body {
     padding: 3rem;
     transition: 0.5s;
    
-    opacity: 0.95;
+    opacity: 0.93;
   }
-
+  .nav-menu li{
+    margin: 2%;
+    padding: 1%;
+    list-style: none;
+  }
+  .nav-menu li a{
+   text-decoration: none;
+   color: #f7f7f9;
+   
+  }
   .home-page {
     padding-top: 17%;
     padding-left: 6%;
