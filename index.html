@@ -10,32 +10,35 @@
 </head>
 <body>
     <main class="main-section">
-    <header class="landing-page">
+    <header class="landing-page" id="port">
         <nav class="nav-bar">
              <div class="logo">
                  <a href="#">My Logo</a>
                 
              </div>
             
-             <div class="menu">
-                 <a href="#"><img src="images/Union.png" alt="menu icon"></a>
-             </div>
-
-
-             <ul class="nav-list">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+             
+             <div class="menu" id="menu-icon" >
+                <div id="close-button" >
+            <img src="images/close.png"  alt="close"> 
+               </div>
+             <ul class="nav-items nav-menu">
+              
+                <li class="items" onclick=""><a href="#port">Portfolio</a></li>
+                <li class="items" onclick=""><a href="#about">About</a></li>
+                <li class="items" onclick=""><a href="#contact">Contact</a></li>
                
              </ul>
-             
-
+            </div>
+            <div class="nav-links" id="nav-menus">
+                <a href="#" ><img src="images/Union.png" alt="menu icon"></a>
+                </div>
             
             
              </nav>
          
      </header>
-         <section class="home-page">
+         <section class="home-page" id="bdy-bg">
              <div class="heading">
                  
                  <h1>I’m Sheldon<br>
@@ -60,6 +63,7 @@
          </section>
 
       <!-- work section -->
+    
          <section class="work-section">
             <div class="card-section">
 
@@ -188,9 +192,9 @@
 
          </section>
 <!-- about myself -->
-         <section class="about">
+         <section class="about" id="about">
             <div class="about-me">
-                <h1>About Myself</h1>
+                <h2>About Myself</h2>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
 
 
@@ -256,11 +260,11 @@
          <!-- contact form section -->
 
 
-<section class="contact-section">
+<section class="contact-section" id="contact">
 
     
         <div class="contact">
-            <h1 >Contact me</h1>
+            <h3 >Contact me</h3>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         <form action="https://formspree.io/f/xpzeqaqj" method="post"  class="form-section">
             <input name="name" required maxlength="30" type="text" placeholder="Sheldon">
@@ -275,6 +279,6 @@
         
     </section>
     </main>
-        
+     <script src="main.js"></script>   
 </body>
 </html>
