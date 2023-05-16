@@ -343,7 +343,7 @@ body {
     align-items: flex-start;
   }
 
-  .about-me h1 {
+  .about-me h2 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -811,7 +811,7 @@ body {
     margin-bottom: 10%;
   }
 
-  .about-me h1 {
+  .about-me h2 {
     font-weight: 700;
     font-size: 40px;
     color: #091e42;
