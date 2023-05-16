@@ -10,28 +10,29 @@
 </head>
 <body>
     <main class="main-section">
-    <header class="landing-page">
+    <header class="landing-page" id="port">
         <nav class="nav-bar">
              <div class="logo">
                  <a href="#">My Logo</a>
                 
              </div>
             
-             <div class="menu" id="menu-icon" onclick="showMenu()">
-                 <a href="#"><img src="images/Union.png" alt="menu icon"></a>
-             </div>
-          
-
-
+             
+             <div class="menu" id="menu-icon" >
+                <div id="close-button" >
+            <img src="images/close.png"  alt="close"> 
+               </div>
              <ul class="nav-items nav-menu">
-                <img src="images/close.png" id="close-button" onclick="hideMenu()" alt="close">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+              
+                <li class="items" onclick=""><a href="#port">Portfolio</a></li>
+                <li class="items" onclick=""><a href="#about">About</a></li>
+                <li class="items" onclick=""><a href="#contact">Contact</a></li>
                
              </ul>
-             
-
+            </div>
+            <div class="nav-links" id="nav-menus">
+                <a href="#" ><img src="images/Union.png" alt="menu icon"></a>
+                </div>
             
             
              </nav>
@@ -191,7 +192,7 @@
 
          </section>
 <!-- about myself -->
-         <section class="about">
+         <section class="about" id="about">
             <div class="about-me">
                 <h1>About Myself</h1>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -259,7 +260,7 @@
          <!-- contact form section -->
 
 
-<section class="contact-section">
+<section class="contact-section" id="contact">
 
     
         <div class="contact">

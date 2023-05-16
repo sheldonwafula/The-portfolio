@@ -1,10 +1,19 @@
-const hambuger = document.querySelector('.menu');
-const navMenu = document.querySelector('.nav-menu');
+const hambger = document.querySelector('#nav-menus');
+const menu = document.querySelector('#menu-icon');
+const closex = document.querySelector('.menu');
+const list = document.querySelectorAll('.items');
 
-function showMenu() {
-    navMenu.style.right = "-90px";
-}
+hambger.addEventListener('click', () => {
+  hambger.classList.add('hide');
+  menu.classList.add('show');
+});
 
-function hideMenu() {
-    navMenu.style.right = "-800px";
-}
+closex.addEventListener('click', () => {
+  hambger.classList.remove('hide');
+  menu.classList.remove('show');
+});
+
+list.addEventListener('click', () => {
+  hambger.classList.remove('hide');
+  menu.classList.remove('show');
+});
