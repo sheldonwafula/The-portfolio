@@ -2,6 +2,7 @@ const hambger = document.querySelector('#nav-menus');
 const menu = document.querySelector('#menu-icon');
 const closex = document.querySelector('.menu');
 const list = document.querySelectorAll('.items');
+const mode = document.querySelector('.all');
 
 hambger.addEventListener('click', () => {
   hambger.classList.add('hide');
@@ -13,10 +14,12 @@ closex.addEventListener('click', () => {
   menu.classList.remove('show');
 });
 
-list.addEventListener('click', () => {
-  hambger.classList.remove('hide');
-  menu.classList.remove('show');
-});
+Array.from(list).forEach((item)=>{
+  item.addEventListener('click', () => {
+    hambger.classList.remove('hide');
+    menu.classList.remove('show');
+  }); 
+})
 // popup window
  const popup = [
   {
@@ -71,47 +74,18 @@ list.addEventListener('click', () => {
 
   }
 ]
-const container=document.querySelector('#main-container');
-popup.map((project)=>{
-  const card=document.createElement('div');
-  card.classList.add('card-section');
-  const image=document.createElement('img');
-  image.classList.add('profile');
-  image.src=project.image;
-  card.appendChild(image);
-  container.appendChild(card);
-})
-// popup.forEach((project) => {
-//   container.innerHTML += `
-//   <div class="card-section" id="${project.id}">
 
-//                 <img src="${project.image}" class="profile">
-              
-
-//                 <div class="ton-section">
-//                     <h2 class="ton">Tonic</h2>
-//                     <ul class="canopy">
-//                         <li class="cano">CANOPY</li>
-//                         <li><img src="images/Counter.png"></li>
-//                         <li>Back End Dev</li>
-//                         <li><img src="images/Counter.png"></li>
-//                         <li>2015</li>
-                        
-//                     </ul>
-    
-//                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-    
-//                     <ul class="tech">
-//                         <li>HTML</li>
-//                         <li>CSS</li>
-//                         <li>JavaScript</li>
-//                     </ul>
-//                     <div id="buttn" >
-//                     <a href="#" >See Project</a>
-//                 </div>
-//                 </div>
-               
-        
-//             </div>
-//   `
-// })
+mode.addEventListener('click', (e) => {
+    const container=document.querySelector('.work-section');
+    popup.map((project)=>{
+     
+      const card=document.createElement('div');
+      card.classList.add('card-section');
+      const image=document.createElement('img');
+      image.classList.add('profile');
+      image.src=project.image;
+      card.appendChild(image);
+      
+      container.appendChild(card);
+    })
+  });
