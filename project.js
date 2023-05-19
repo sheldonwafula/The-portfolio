@@ -1,5 +1,5 @@
 const works = document.querySelector('.work-section');
-const showDetails = document.querySelector('.popup-window')
+const showDetails = document.querySelector('.popup-window');
 const blur = document.getElementById('blur');
 const close = document.querySelector('.close');
 const Ptitle = document.querySelector('.title');
@@ -14,51 +14,55 @@ const Psource = document.querySelector('.source');
 const popup = [
   {
     id: 0,
-    title: "Tonic",
-    Organization: "CANOPY",
-    Stack: ["Back End Dev", "2015"],
-    image: "images/first.png",
+    title: 'Tonic',
+    Organization: 'CANOPY',
+    Stack: 'Back End Dev',
+    year: '2015',
+    image: 'images/first.png',
     Description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    Technologies: ["HTML", "CSS", "JavaScript"],
-    seeLive: "https://sheldonwafula.github.io/The-portfolio/",
-    seeSource: "https://github.com/sheldonwafula/The-portfolio",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    Technologies: ['HTML', 'CSS', 'JavaScript'],
+    seeLive: 'https://sheldonwafula.github.io/The-portfolio/',
+    seeSource: 'https://github.com/sheldonwafula/The-portfolio',
   },
   {
     id: 1,
-    title: "Multi-Post Stories",
-    Organization: "Canopy",
-    Stack: ["Back End", "2015"],
-    image: "images/second.png",
+    title: 'Multi-Post Stories',
+    Organization: 'Canopy',
+    Stack: 'Back End Dev',
+    year: '2015',
+    image: 'images/second.png',
     Description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    Technologies: ["HTML", "CSS", "JavaScript"],
-    seeLive: "https://sheldonwafula.github.io/The-portfolio/",
-    seeSource: "https://github.com/sheldonwafula/The-portfolio",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    Technologies: ['HTML', 'CSS', 'JavaScript'],
+    seeLive: 'https://sheldonwafula.github.io/The-portfolio/',
+    seeSource: 'https://github.com/sheldonwafula/The-portfolio',
   },
   {
     id: 2,
-    title: "Tonic",
-    Organization: "Canopy",
-    Stack: ["Back End", "2015"],
-    image: "images/Snapshoot Portfolio.png",
+    title: 'Tonic',
+    Organization: 'Canopy',
+    Stack: 'Back End Dev',
+    year: '2015',
+    image: 'images/Snapshoot Portfolio.png',
     Description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    Technologies: ["HTML", "CSS", "JavaScript"],
-    seeLive: "https://sheldonwafula.github.io/The-portfolio/",
-    seeSource: "https://github.com/sheldonwafula/The-portfolio",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    Technologies: ['HTML', 'CSS', 'JavaScript'],
+    seeLive: 'https://sheldonwafula.github.io/The-portfolio/',
+    seeSource: 'https://github.com/sheldonwafula/The-portfolio',
   },
   {
     id: 3,
-    title: "Multi-Post Stories",
-    Organization: "CANOPY",
-    Stack: ["Back End Dev", "2015"],
-    image: "images/fourth.png",
+    title: 'Multi-Post Stories',
+    Organization: 'CANOPY',
+    Stack: 'Back End Dev',
+    year: '2015',
+    image: 'images/fourth.png',
     Description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    Technologies: ["HTML", "CSS", "JavaScript"],
-    seeLive: "https://sheldonwafula.github.io/The-portfolio/",
-    seeSource: "https://github.com/sheldonwafula/The-portfolio",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    Technologies: ['HTML', 'CSS', 'JavaScript'],
+    seeLive: 'https://sheldonwafula.github.io/The-portfolio/',
+    seeSource: 'https://github.com/sheldonwafula/The-portfolio',
   },
 ];
 
@@ -71,13 +75,13 @@ popup.forEach((popups) => {
       <ul class="canopy">
         <li class="cano">${popups.Organization}</li>
         <li><img src="images/Counter.png" /></li>
-        <li>${popups.Stack[0]}</li>
+        <li>${popups.Stack}</li>
         <li><img src="images/Counter.png" /></li>
-        <li>${popups.Stack[1]}</li>
+        <li>${popups.year}</li>
       </ul>
       <p>${popups.Description}</p>
       <ul class="tech">
-        ${popups.Technologies.map((tech) => `<li>${tech}</li>`).join("")}
+        ${popups.Technologies.map((tech) => `<li>${tech}</li>`).join('')}
       </ul>
       <button type="button" id=${popups.id} class="seep">See Project</button>
     </div>
@@ -90,8 +94,8 @@ const seeDetails = document.querySelectorAll('.seep');
 function showPop(Id) {
   Ptitle.textContent = popup[Id].title;
   Pcanop.textContent = popup[Id].Organization;
-  Pstack1.innerHTML = popup[Id].Stack[0];
-  Pstack2.innerHTML = popup[Id].Stack[1];
+  Pstack1.innerHTML = popup[Id].Stack;
+  Pstack2.innerHTML = popup[Id].year;
   pic.src = popup[Id].image;
   desc.textContent = popup[Id].Description;
   Ptag.innerHTML = popup[Id].Technologies.map((tech) => `<li>${tech}</li>`).join('');
@@ -103,10 +107,9 @@ function showPop(Id) {
 
 seeDetails.forEach((button) => button.addEventListener('click', () => {
   showPop(Number(button.id));
-  
 }));
 
 close.addEventListener('click', () => {
   blur.classList.toggle('active');
   showDetails.classList.toggle('active');
-})
+});
