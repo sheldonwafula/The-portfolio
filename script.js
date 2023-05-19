@@ -34,6 +34,12 @@ sub.addEventListener('click', (e) => {
 const names=yourName.value;
 const email=yourEmail.value;
 const message=yourmessage.value;
+ 
+const saved=JSON.stringify(names)
+const emailse=JSON.stringify(email)
+const messe=JSON.stringify(message)
+
+
 localStorage.setItem('name',names);
 localStorage.setItem('emails',email);
 localStorage.setItem('messages',message);
