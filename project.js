@@ -113,3 +113,6 @@ close.addEventListener('click', () => {
   blur.classList.toggle('active');
   showDetails.classList.toggle('active');
 });
+    
+
+

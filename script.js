@@ -25,3 +25,16 @@ sub.addEventListener('click', (e) => {
     form.submit();
   }
 });
+
+
+
+
+// local storage
+
+const names=yourName.value;
+const email=yourEmail.value;
+const message=yourmessage.value;
+localStorage.setItem('name',names);
+localStorage.setItem('emails',email);
+localStorage.setItem('messages',message);
+
