@@ -13,7 +13,9 @@ closex.addEventListener('click', () => {
   menu.classList.remove('show');
 });
 
-list.addEventListener('click', () => {
-  hambger.classList.remove('hide');
-  menu.classList.remove('show');
+Array.from(list).forEach((item) => {
+  item.addEventListener('click', () => {
+    hambger.classList.remove('hide');
+    menu.classList.remove('show');
+  });
 });
