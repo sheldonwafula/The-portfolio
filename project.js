@@ -16,7 +16,8 @@ const popup = [
     id: 0,
     title: 'Tonic',
     Organization: 'CANOPY',
-    Stack: ['Back End Dev', '2015'],
+    Stack: 'Back End Dev',
+    Year: '2015',
     image: 'images/first.png',
     Description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -28,7 +29,8 @@ const popup = [
     id: 1,
     title: 'Multi-Post Stories',
     Organization: 'Canopy',
-    Stack: ['Back End', '2015'],
+    Stack: 'Back End Dev',
+    Year: '2015',
     image: 'images/second.png',
     Description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -40,7 +42,8 @@ const popup = [
     id: 2,
     title: 'Tonic',
     Organization: 'Canopy',
-    Stack: ['Back End', '2015'],
+    Stack: 'Back End Dev',
+    Year: '2015',
     image: 'images/Snapshoot Portfolio.png',
     Description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -52,7 +55,8 @@ const popup = [
     id: 3,
     title: 'Multi-Post Stories',
     Organization: 'CANOPY',
-    Stack: ['Back End Dev', '2015'],
+    Stack: 'Back End Dev',
+    Year: '2015',
     image: 'images/fourth.png',
     Description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -71,9 +75,9 @@ popup.forEach((popups) => {
       <ul class="canopy">
         <li class="cano">${popups.Organization}</li>
         <li><img src="images/Counter.png" /></li>
-        <li>${popups.Stack[0]}</li>
+        <li>${popups.Stack}</li>
         <li><img src="images/Counter.png" /></li>
-        <li>${popups.Stack[1]}</li>
+        <li>${popups.Year}</li>
       </ul>
       <p>${popups.Description}</p>
       <ul class="tech">
@@ -90,8 +94,8 @@ const seeDetails = document.querySelectorAll('.seep');
 function showPop(Id) {
   Ptitle.textContent = popup[Id].title;
   Pcanop.textContent = popup[Id].Organization;
-  Pstack1.innerHTML = popup[Id].Stack[0];
-  Pstack2.innerHTML = popup[Id].Stack[1];
+  Pstack1.innerHTML = popup[Id].Stack;
+  Pstack2.innerHTML = popup[Id].Year;
   pic.src = popup[Id].image;
   desc.textContent = popup[Id].Description;
   Ptag.innerHTML = popup[Id].Technologies.map((tech) => `<li>${tech}</li>`).join('');

@@ -1,31 +1,27 @@
+const yourName = document.querySelector('.yourname');
+const yourEmail = document.querySelector('.youremail');
+const error = document.querySelector('#error');
+const form = document.querySelector('#form');
+const sub = document.querySelector('#submit-button');
+const yourmessage = document.querySelector('.yourmassage');
 
-let yourName=document.querySelector('.yourname');
-let yourEmail=document.querySelector('.youremail');
-let error=document.querySelector('#error');
-let form=document.querySelector('#form');
-
-
-
-
-
-const regexE = /[^A-Z]/g
-
-
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-  
-    const incorrect = yourEmail.value.length === 0 || regexE.test(yourEmail.value);
-    if (!incorrect) {
-      yourEmail.className = "invalid";
-      error.textContent = "I expect an email, please";
-      error.className = "error active";
-    } else {
-      yourEmail.className = "valid";
-      error.textContent = "";
-      error.className = "error";
-    }
-  });
-
-
-
+sub.addEventListener('click', (e) => {
+  e.preventDefault();
+  error.innerHTML = '';
+  if (yourName.value === '' || yourName.value == null) {
+    error.innerHTML = 'Please enter your name';
+  } else if (yourEmail.value === '' || yourEmail.value == null) {
+    error.innerHTML = 'Please enter your email';
+  } else if (yourEmail.value !== yourEmail.value.toLocaleLowerCase()) {
+    error.innerHTML = 'Please use lower case characters for the email address';
+    yourEmail.className = 'invalid';
+    error.className = 'error';
+    error.className = 'error active';
+  } else if (yourmessage.value === '' || yourmessage.value == null) {
+    yourEmail.className = 'invalid';
+    error.innerHTML = 'Please enter your message';
+    error.className = 'error';
+  } else {
+    form.submit();
+  }
+});
