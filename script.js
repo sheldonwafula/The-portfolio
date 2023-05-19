@@ -25,3 +25,5 @@ sub.addEventListener('click', (e) => {
     form.submit();
   }
 });
+
+// local storage
