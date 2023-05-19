@@ -26,5 +26,3 @@ sub.addEventListener('click', (e) => {
     form.submit();
   }
 });
-
-
