@@ -154,6 +154,24 @@ body {
   gap: 8px;
 }
 
+.live {
+  background-color: #fcfdff;
+  color: #6d92f1;
+}
+
+.live:hover {
+  background-color: #d4ddf1;
+}
+
+.source {
+  background-color: #fcfdff;
+  color: #6d92f1;
+}
+
+.source:hover {
+  background-color: #d4ddf1;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-bar {
     display: flex;
