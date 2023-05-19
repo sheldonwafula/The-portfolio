@@ -39,7 +39,7 @@ body {
   background: #2230d2;
 }
 
-/*------------ pop-up window ----------*/
+/* ------------ pop-up window ---------- */
 #pop {
   display: flex;
   justify-content: center;
@@ -307,10 +307,6 @@ body {
     color: #7f8cff;
   }
 
-  .card-section {
-    padding: 20px;
-  }
-
   .card-section a {
     width: 90px;
     height: 28px;
@@ -414,6 +410,7 @@ body {
     justify-content: flex-start;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
+    padding: 20px;
   }
 
   .profile {
@@ -1169,7 +1166,7 @@ body {
     color: #6070ff;
   }
 
-  /*------------ pop-up window ----------*/
+  /* ------------ pop-up window ---------- */
   #pop {
     margin: 0;
   }
@@ -1194,6 +1191,7 @@ body {
     margin: 15px 30px;
   }
 }
+
 /* fomrm validation */
 .error {
   width: 100%;
@@ -1205,6 +1203,7 @@ body {
   border-radius: 0 0 5px 5px;
   box-sizing: border-box;
 }
+
 .error.active {
   padding: 0.3em;
 }

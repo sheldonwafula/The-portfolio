@@ -1,3 +1,4 @@
+// form validation
 const yourName = document.querySelector('.yourname');
 const yourEmail = document.querySelector('.youremail');
 const error = document.querySelector('#error');
@@ -26,4 +27,4 @@ sub.addEventListener('click', (e) => {
   }
 });
 
-// local storage
+
