@@ -1194,3 +1194,23 @@ body {
     margin: 15px 30px;
   }
 }
+/* fomrm validation */
+.error {
+  width: 100%;
+  padding: 0;
+  display: block;
+  font-size: 80%;
+  color: white;
+  background-color: rgb(247, 7, 7);
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+.error.active {
+  padding: 0.3em;
+}
+
+input.invalid {
+  border-color: rgb(247, 7, 7);
+  background-color: #fdd;
+  display: block;
+}
