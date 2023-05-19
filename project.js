@@ -79,11 +79,13 @@ popup.forEach((popups) => {
         <li><img src="images/Counter.png" /></li>
         <li>${popups.year}</li>
       </ul>
+      
       <p>${popups.Description}</p>
       <ul class="tech">
         ${popups.Technologies.map((tech) => `<li>${tech}</li>`).join('')}
       </ul>
       <button type="button" id=${popups.id} class="seep">See Project</button>
+     
     </div>
   </div>
     `;
@@ -93,6 +95,7 @@ const seeDetails = document.querySelectorAll('.seep');
 
 function showPop(Id) {
   Ptitle.textContent = popup[Id].title;
+
   Pcanop.textContent = popup[Id].Organization;
   Pstack1.innerHTML = popup[Id].Stack;
   Pstack2.innerHTML = popup[Id].year;
