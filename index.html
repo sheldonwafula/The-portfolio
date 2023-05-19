@@ -173,8 +173,10 @@
             action="https://formspree.io/f/xpzeqaqj"
             method="post"
             class="form-section"
+            id="form"
           >
             <input
+              class="yourname"
               name="name"
               required
               maxlength="30"
@@ -182,6 +184,7 @@
               placeholder="Sheldon"
             />
             <input
+              class="youremail"
               name="email"
               required
               type="email"
@@ -192,9 +195,11 @@
               required
               maxlength="500"
               placeholder="add comment"
+              class="yourmassage"
             ></textarea>
 
-            <button class="butt" type="submit">Get in touch</button>
+            <button class="butt" id="submit-button" type="submit">Get in touch</button>
+            <div class="error" id="error"></div>
           </form>
         </div>
       </section>
@@ -242,5 +247,6 @@
     </div>
     <script src="main.js"></script>
     <script src="project.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
