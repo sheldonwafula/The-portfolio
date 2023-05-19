@@ -18,7 +18,7 @@ sub.addEventListener('click', (e) => {
     error.className = 'error';
     error.className = 'error active';
   } else if (yourmessage.value === '' || yourmessage.value == null) {
-    yourEmail.className = 'invalid';
+    yourmessage.className = 'invalid';
     error.innerHTML = 'Please enter your message';
     error.className = 'error';
   } else {
