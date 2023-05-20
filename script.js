@@ -26,3 +26,35 @@ sub.addEventListener('click', (e) => {
     form.submit();
   }
 });
+
+// local storage
+const contactForm = document.querySelector('.form-section');
+const yourNames = document.querySelector('.yourname');
+const yourEmails = document.querySelector('.youremail');
+
+const yourmessages = document.querySelector('.yourmassage');
+
+yourNames.value = '';
+yourEmails.value = '';
+yourmessages.value = '';
+
+function dataSave() {
+  const dataForm = {
+    ourNames: yourNames.value,
+    ourEmails: yourEmails.value,
+    ourmessages: yourmessages.value,
+  };
+  localStorage.setItem('userInfo', JSON.stringify(dataForm));
+}
+contactForm.addEventListener('change', dataSave);
+
+window.onload = () => {
+  let item = localStorage.getItem('userInfo');
+  item = JSON.parse(item);
+
+  if (item) {
+    yourNames.value = item.ourNames;
+    yourEmails.value = item.ourEmails;
+    yourmessages.value = item.ourmessages;
+  }
+};
