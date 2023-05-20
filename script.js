@@ -26,25 +26,21 @@ sub.addEventListener('click', (e) => {
   }
 });
 
-
-
-
 // local storage
-
+const contactForm = document.querySelector('.form-section');
 const yourNames = document.querySelector('.yourname');
 const yourEmails = document.querySelector('.youremail');
-const forms = document.querySelector('#form');
-const subs = document.querySelector('#submit-button');
-const yourmessages= document.querySelector('.yourmassage');
 
-yourNames .value = '';
-yourEmails .value = '';
+const yourmessages = document.querySelector('.yourmassage');
+
+yourNames.value = '';
+yourEmails.value = '';
 yourmessages.value = '';
 
 function dataSave() {
   const dataForm = {
     ourNames: yourNames.value,
-    ourEmails:yourEmails.value,
+    ourEmails: yourEmails.value,
     ourmessages: yourmessages.value,
   };
   localStorage.setItem('userInfo', JSON.stringify(dataForm));

@@ -39,7 +39,7 @@ body {
   background: #2230d2;
 }
 
-/*------------ pop-up window ----------*/
+/* ------------ pop-up window ---------- */
 #pop {
   display: flex;
   justify-content: center;
@@ -305,10 +305,6 @@ body {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     color: #7f8cff;
-  }
-
-  .card-section {
-    padding: 20px;
   }
 
   .card-section a {
@@ -1169,7 +1165,7 @@ body {
     color: #6070ff;
   }
 
-  /*------------ pop-up window ----------*/
+  /* ------------ pop-up window ---------- */
   #pop {
     margin: 0;
   }
@@ -1194,6 +1190,7 @@ body {
     margin: 15px 30px;
   }
 }
+
 /* fomrm validation */
 .error {
   width: 100%;
@@ -1205,6 +1202,7 @@ body {
   border-radius: 0 0 5px 5px;
   box-sizing: border-box;
 }
+
 .error.active {
   padding: 0.3em;
 }
