@@ -31,16 +31,33 @@ sub.addEventListener('click', (e) => {
 
 // local storage
 
-const names=yourName.value;
-const email=yourEmail.value;
-const message=yourmessage.value;
- 
-const saved=JSON.stringify(names)
-const emailse=JSON.stringify(email)
-const messe=JSON.stringify(message)
+const yourNames = document.querySelector('.yourname');
+const yourEmails = document.querySelector('.youremail');
+const forms = document.querySelector('#form');
+const subs = document.querySelector('#submit-button');
+const yourmessages= document.querySelector('.yourmassage');
 
+yourNames .value = '';
+yourEmails .value = '';
+yourmessages.value = '';
 
-localStorage.setItem('name',names);
-localStorage.setItem('emails',email);
-localStorage.setItem('messages',message);
+function dataSave() {
+  const dataForm = {
+    ourNames: yourNames.value,
+    ourEmails:yourEmails.value,
+    ourmessages: yourmessages.value,
+  };
+  localStorage.setItem('userInfo', JSON.stringify(dataForm));
+}
+contactForm.addEventListener('change', dataSave);
 
+window.onload = () => {
+  let item = localStorage.getItem('userInfo');
+  item = JSON.parse(item);
+
+  if (item) {
+    yourNames.value = item.ourNames;
+    yourEmails.value = item.ourEmails;
+    yourmessages.value = item.ourmessages;
+  }
+};
