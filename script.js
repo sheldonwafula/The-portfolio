@@ -28,7 +28,7 @@ sub.addEventListener('click', (e) => {
 });
 
 // local storage
-const contactForm = document.querySelector('.form-section');
+const contactForm = document.querySelector('.form-main');
 const yourNames = document.querySelector('.yourname');
 const yourEmails = document.querySelector('.youremail');
 
